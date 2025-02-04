@@ -4,7 +4,7 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.chbase</groupId>
-  <version>1.6</version>
+  <version>2.0</version>
   <artifactId>chbase-examples</artifactId>
   <packaging>pom</packaging>
   <modules>
@@ -13,4 +13,3 @@
     <module>height-offline-sample</module>
   </modules>
 </project>
-
