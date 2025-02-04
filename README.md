@@ -10,26 +10,17 @@ The UI and jaxb libraries both rely on the SDK.
 
 Build from the top level pom.xml:
 
-    mvn install -DskipTests=true
+    mvn install
 
 To run tests, you will need to provide a tests.personid and tests.recordid in the hv-application.properties file. These can be obtained in the response of
 GetPersonInfo API call
 
-Create Eclipse environment
-
-    mvn eclipse:eclipse
-
-Now import projects into Eclipse: File-->Import.
-In Project-->Properties-->Build Path, configure the M2_REPO variable to
-point at your maven repository. This is probably in
-<user_home>/.m2/repository. If you miss or skip this step, eclipse will
-complain that it cannot find its dependencies.
 
 # Running the Sample:
 
 You can run the app directly from the command line with maven:
 
-    cd sample/jaxb-ui
+    cd examples/jaxb-ui
     mvn jetty:run
 
 Point your web browser at http://localhost:8080/

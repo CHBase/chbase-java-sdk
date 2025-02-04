@@ -18,12 +18,9 @@ package com.chbase;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
-
+import java.util.logging.Logger; 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
-
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 
 import org.xml.sax.InputSource;
 
@@ -34,7 +31,7 @@ import org.xml.sax.InputSource;
 public class DefaultResponseStrategy
 implements ResponseStrategy
 {
-	static Logger logger = LogManager.getLogger(ResponseStrategy.class);
+	static Logger logger = Logger.getLogger("ResponseStrategy");
 
 
 	/**

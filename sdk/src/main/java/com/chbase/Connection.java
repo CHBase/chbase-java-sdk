@@ -21,10 +21,8 @@ import java.util.Calendar;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-
+import java.util.logging.Logger; 
 import org.apache.commons.codec.binary.Base64;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
 /**
  * The connection serves as the main pipe to HealthVault.  It
  * formats requests into a HealthVault envelope ensuring any
@@ -39,7 +37,7 @@ public class Connection
     private Transport transport;
     private Authenticator authenticator;
 
-    private static Logger logger = LogManager.getLogger(Connection.class.getName());
+    private static Logger logger = Logger.getLogger("Connection");
     /**
      * Gets the app id.
      * 
