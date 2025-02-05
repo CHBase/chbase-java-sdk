@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:17:49 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.AllocatePackageId")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.AllocatePackageId")
 package com.chbase.methods.jaxb.allocatepackageid.response;

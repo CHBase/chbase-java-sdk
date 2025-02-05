@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.record")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.record")
 package com.chbase.methods.jaxb.record;

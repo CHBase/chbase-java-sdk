@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:21:34 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.PutThings")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.PutThings")
 package com.chbase.methods.jaxb.putthings2.response;

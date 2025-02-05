@@ -7,5 +7,5 @@
 // Generated on: 2011.03.01 at 07:54:30 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.SubscribeToEvent")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.SubscribeToEvent")
 package com.chbase.methods.jaxb.subscribetoevent.response;

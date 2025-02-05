@@ -5,5 +5,5 @@
 // Generated on: 2015.09.15 at 05:57:19 PM IST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.thing.HbA1C")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.thing.HbA1C")
 package com.chbase.thing.oxm.jaxb.hba1x;

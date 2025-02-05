@@ -7,5 +7,5 @@
 // Generated on: 2013.05.07 at 02:21:23 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "")
 package com.chbase.thing.oxm.jaxb.healthgoal;

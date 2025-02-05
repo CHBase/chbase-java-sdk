@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 02:57:00 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.UNQUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "", elementFormDefault =jakarta.xml.bind.annotation.XmlNsForm.UNQUALIFIED)
 package com.chbase.thing.oxm.jaxb.xmldsigcoreschema;

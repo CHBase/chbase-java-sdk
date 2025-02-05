@@ -8,7 +8,7 @@
 
 package com.chbase.thing.oxm.jaxb.hba1x;
 
-import javax.xml.bind.annotation.XmlRegistry;
+import jakarta.xml.bind.annotation.XmlRegistry;
 
 
 /**

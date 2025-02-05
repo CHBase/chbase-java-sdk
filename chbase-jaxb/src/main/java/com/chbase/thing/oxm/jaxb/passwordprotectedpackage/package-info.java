@@ -5,5 +5,5 @@
 // Generated on: 2015.09.15 at 05:49:36 PM IST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.thing.password.protected.package")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.thing.password.protected.package")
 package com.chbase.thing.oxm.jaxb.passwordprotectedpackage;

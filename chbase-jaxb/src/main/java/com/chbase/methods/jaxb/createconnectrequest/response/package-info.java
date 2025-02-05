@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:18:22 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.CreateConnectRequest")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.CreateConnectRequest")
 package com.chbase.methods.jaxb.createconnectrequest.response;

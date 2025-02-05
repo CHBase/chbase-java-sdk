@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 09:55:36 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "")
 package com.chbase.methods.jaxb.updateapplication.request;

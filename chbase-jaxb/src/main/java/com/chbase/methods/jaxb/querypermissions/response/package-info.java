@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 10:03:33 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.QueryPermissions")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.QueryPermissions")
 package com.chbase.methods.jaxb.querypermissions.response;

@@ -2,8 +2,8 @@ package com.chbase.oxm.jaxb;
 
 import java.util.HashMap;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
 
 public class JaxbContextFactory {
 
