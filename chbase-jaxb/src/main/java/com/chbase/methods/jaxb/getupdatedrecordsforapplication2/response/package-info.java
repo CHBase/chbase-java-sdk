@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 10:02:29 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetUpdatedRecordsForApplication2")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetUpdatedRecordsForApplication2")
 package com.chbase.methods.jaxb.getupdatedrecordsforapplication2.response;

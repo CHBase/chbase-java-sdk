@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 09:57:01 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.BeginPutConnectPackageBlob")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.BeginPutConnectPackageBlob")
 package com.chbase.methods.jaxb.beginputconnectpackageblob.response;

@@ -7,5 +7,5 @@
 // Generated on: 2011.03.01 at 07:55:07 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.subscription")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.subscription")
 package com.chbase.methods.jaxb.subscription;

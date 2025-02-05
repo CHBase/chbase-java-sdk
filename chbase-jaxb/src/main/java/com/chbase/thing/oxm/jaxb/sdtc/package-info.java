@@ -5,5 +5,5 @@
 // Generated on: 2015.09.23 at 03:45:28 PM IST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:hl7-org:sdtc", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:hl7-org:sdtc", elementFormDefault =jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package com.chbase.thing.oxm.jaxb.sdtc;

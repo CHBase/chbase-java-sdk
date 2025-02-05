@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.directory")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.directory")
 package com.chbase.methods.jaxb.directory;

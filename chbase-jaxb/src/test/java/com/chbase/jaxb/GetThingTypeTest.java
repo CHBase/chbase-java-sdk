@@ -3,7 +3,7 @@ package com.chbase.jaxb;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
-import org.jmock.lib.legacy.ClassImposteriser;
+import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -20,7 +20,7 @@ public class GetThingTypeTest {
 
 	private Mockery context = new JUnit4Mockery() {
 		{
-			setImposteriser(ClassImposteriser.INSTANCE);
+			setImposteriser(ByteBuddyClassImposteriser.INSTANCE);
 		}
 	};
 

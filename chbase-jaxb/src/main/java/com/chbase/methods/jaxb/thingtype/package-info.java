@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.ThingType")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.ThingType")
 package com.chbase.methods.jaxb.thingtype;

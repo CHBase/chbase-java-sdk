@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:20:44 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetServiceDefinition2")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetServiceDefinition2")
 package com.chbase.methods.jaxb.getservicedefinition2.response;

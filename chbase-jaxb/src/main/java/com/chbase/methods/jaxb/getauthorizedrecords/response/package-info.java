@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:19:57 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetAuthorizedRecords")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetAuthorizedRecords")
 package com.chbase.methods.jaxb.getauthorizedrecords.response;

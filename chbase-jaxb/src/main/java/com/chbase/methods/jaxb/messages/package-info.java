@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.messages")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.messages")
 package com.chbase.methods.jaxb.messages;

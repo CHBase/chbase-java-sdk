@@ -7,9 +7,9 @@
 	com.chbase.thing.oxm.jaxb.thing.Thing2,
 	com.chbase.thing.oxm.jaxb.thing.ThingType,
 	com.chbase.thing.oxm.jaxb.thing.DataXml,
-	javax.xml.bind.JAXBContext,
-	javax.xml.bind.Marshaller,
-	javax.xml.bind.Unmarshaller,
+	jakarta.xml.bind.JAXBContext,
+	jakarta.xml.bind.Marshaller,
+	jakarta.xml.bind.Unmarshaller,
 	com.chbase.oxm.jaxb.JaxbContextFactory,
 	com.chbase.thing.oxm.jaxb.height.Height" %>
 <%@ page import="java.util.*" %>
