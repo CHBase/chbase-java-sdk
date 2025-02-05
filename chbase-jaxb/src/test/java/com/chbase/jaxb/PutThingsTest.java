@@ -6,7 +6,7 @@ import java.util.Calendar;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
-import org.jmock.lib.legacy.ClassImposteriser;
+import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -29,7 +29,7 @@ public class PutThingsTest {
 
 	private Mockery context = new JUnit4Mockery() {
 		{
-			setImposteriser(ClassImposteriser.INSTANCE);
+			setImposteriser(ByteBuddyClassImposteriser.INSTANCE);
 		}
 	};
 
@@ -79,13 +79,13 @@ public class PutThingsTest {
 		Thing2 thing = GetThing();
 
 		ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-		InputStream is = classloader.getResourceAsStream("file.txt");
+		InputStream is = classloader.getResourceAsStream("unit_test_blob.png");
 
 		Request request = new Request();
 		request.setOfflineUserId(ApplicationConfig.Test_PersonID);
 		request.setRecordId(ApplicationConfig.Test_RecordID);
 
-		thing.addBlob("", is, "text/plain", request);
+		thing.addBlob("", is, "image/png", request);
 
 		is.close();
 

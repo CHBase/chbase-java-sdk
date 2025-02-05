@@ -3,8 +3,8 @@ package com.chbase.jaxb.things;
 import java.io.StringReader;
 import java.math.BigInteger;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.Unmarshaller;
 
 import org.junit.Before;
 import org.junit.Test;

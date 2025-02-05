@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:22:44 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.vocab")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.vocab")
 package com.chbase.methods.jaxb.vocab;

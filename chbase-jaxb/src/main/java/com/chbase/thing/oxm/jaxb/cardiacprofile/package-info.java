@@ -7,5 +7,5 @@
 // Generated on: 2011.02.07 at 01:39:17 AM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "")
 package com.chbase.thing.oxm.jaxb.cardiacprofile;

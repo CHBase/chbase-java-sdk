@@ -7,5 +7,5 @@
 // Generated on: 2011.03.01 at 07:53:01 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "")
 package com.chbase.methods.jaxb.updateeventsubscription.request;

@@ -7,5 +7,5 @@
 // Generated on: 2009.11.03 at 08:20:26 PM PST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetPersonInfo")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.methods.response.GetPersonInfo")
 package com.chbase.methods.jaxb.getpersoninfo.response;

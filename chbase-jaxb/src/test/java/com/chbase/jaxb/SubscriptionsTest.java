@@ -3,7 +3,7 @@ package com.chbase.jaxb;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JMock;
 import org.jmock.integration.junit4.JUnit4Mockery;
-import org.jmock.lib.legacy.ClassImposteriser;
+import org.jmock.imposters.ByteBuddyClassImposteriser;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,7 +32,7 @@ public class SubscriptionsTest {
 
 	private Mockery context = new JUnit4Mockery() {
 		{
-			setImposteriser(ClassImposteriser.INSTANCE);
+			setImposteriser(ByteBuddyClassImposteriser.INSTANCE);
 		}
 	};
 

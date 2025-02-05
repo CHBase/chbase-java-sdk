@@ -7,5 +7,5 @@
 // Generated on: 2015.09.11 at 04:22:28 PM IST
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "")
 package com.chbase.methods.jaxb.getpeopleforrecord.request;

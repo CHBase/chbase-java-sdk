@@ -7,5 +7,5 @@
 // Generated on: 2013.05.14 at 10:04:11 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.location")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.location")
 package com.chbase.methods.jaxb.location;

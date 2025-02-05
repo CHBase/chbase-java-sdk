@@ -7,5 +7,5 @@
 // Generated on: 2013.05.07 at 02:20:05 PM PDT
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "")
 package com.chbase.thing.oxm.jaxb.dietaryintake;

@@ -5,5 +5,5 @@
 // Generated on: 2015.09.15 at 06:00:58 PM IST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.thing.encounter")
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "urn:com.microsoft.wc.thing.encounter")
 package com.chbase.thing.oxm.jaxb.encounter;
