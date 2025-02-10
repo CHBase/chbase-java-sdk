@@ -105,7 +105,8 @@ public class ApplicationAuthenticator implements Authenticator
 	{
 		this.appId = appId;
 	}
-	/**
+
+	/**
 	 * Gets the key store.
 	 * 
 	 * @return the key store
@@ -159,6 +160,7 @@ public class ApplicationAuthenticator implements Authenticator
 		{
 			InputSource src = new InputSource(response.getInputStream());
 			DocumentBuilderFactory doc_factory =  DocumentBuilderFactory.newInstance();
+			doc_factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
 			DocumentBuilder builder = doc_factory.newDocumentBuilder();
 			Document doc = builder.parse(src);
 	        XPath xpath = XPathFactory.newInstance().newXPath();

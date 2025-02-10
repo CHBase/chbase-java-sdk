@@ -24,7 +24,8 @@ import jakarta.xml.bind.annotation.XmlTransient;
 import jakarta.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.transform.dom.DOMResult;
-
+import java.util.logging.Logger; 
+import java.util.logging.Level; 
 import org.w3c.dom.Document;
 
 import com.chbase.Request;
@@ -77,6 +78,7 @@ import com.chbase.oxm.jaxb.JaxbContextFactory;
 @XmlType(name = "Thing2", propOrder = { "thingId", "typeId", "thingState", "flags", "effDate", "created", "updated",
 		"dataXml", "blobPayload", "effPermissions", "tags", "signatureInfo" })
 public class Thing2 {
+	private static Logger logger = Logger.getLogger("Thing2");
 
 	@XmlElement(name = "thing-id")
 	protected ThingKey thingId;
@@ -371,8 +373,8 @@ public class Thing2 {
 				JAXBContext jc = JaxbContextFactory.getContext(itemclass.getPackage().getName());
 				Unmarshaller u = jc.createUnmarshaller();
 				thing = u.unmarshal(getDataXml().get(0).getAny(),itemclass);
-			} catch (Exception e) {
-				e.printStackTrace();
+			} catch (Exception ex) {
+				logger.log(Level.SEVERE, ex.toString(), ex);
 			}
 		}
 		return thing.getValue();

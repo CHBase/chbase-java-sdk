@@ -27,7 +27,6 @@ import javax.servlet.http.HttpSession;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathFactory;
-import java.util.logging.Logger; 
 import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 import java.util.logging.Logger; 
