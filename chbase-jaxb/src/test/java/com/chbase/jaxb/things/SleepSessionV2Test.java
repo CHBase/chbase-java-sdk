@@ -1,13 +1,13 @@
 package com.chbase.jaxb.things;
 
 import java.math.BigInteger;
+import java.util.Calendar;
 
 import org.junit.Before;
 import org.junit.Test;
-import com.chbase.thing.oxm.jaxb.dates.DateTime;
+
 import com.chbase.jaxb.TestHelpers;
 import com.chbase.methods.jaxb.SimpleRequestTemplate;
-import com.chbase.thing.oxm.jaxb.advancedirectivev2.AdvanceDirectiveContactType;
 import com.chbase.methods.jaxb.getthings3.request.GetThings3Request;
 import com.chbase.methods.jaxb.getthings3.request.ThingFilterSpec;
 import com.chbase.methods.jaxb.getthings3.request.ThingFormatSpec2;
@@ -16,17 +16,15 @@ import com.chbase.methods.jaxb.getthings3.request.ThingSectionSpec2;
 import com.chbase.methods.jaxb.getthings3.response.GetThings3Response;
 import com.chbase.methods.jaxb.putthings2.request.PutThings2Request;
 import com.chbase.methods.jaxb.putthings2.response.PutThings2Response;
-
-import com.chbase.thing.oxm.jaxb.advancedirectivev2.AdvanceDirectiveV2;
 import com.chbase.thing.oxm.jaxb.base.CodableValue;
-
-import com.chbase.thing.oxm.jaxb.base.Name;
+import com.chbase.thing.oxm.jaxb.dates.DateTime;
+import com.chbase.thing.oxm.jaxb.sleepsessionv2.Awakening;
+import com.chbase.thing.oxm.jaxb.sleepsessionv2.Level;
+import com.chbase.thing.oxm.jaxb.sleepsessionv2.SleepSessionV2;
 import com.chbase.thing.oxm.jaxb.thing.Thing2;
 import com.chbase.thing.oxm.jaxb.thing.TypeManager;
-import com.chbase.thing.oxm.jaxb.base.Contact;
-import java.util.Calendar;
 
-public class AdvanceDirectiveV2Test {
+public class SleepSessionV2Test {
 
 	private SimpleRequestTemplate requestTemplate;
 
@@ -38,7 +36,7 @@ public class AdvanceDirectiveV2Test {
 	@Test
 	public void testBasicPutGet() throws Exception {
 		Thing2 thing = new Thing2();
-		thing.setData(createValidAdvanceDirectiveV2());
+		thing.setData(createSleepSessionV2());
 
 		PutThings2Request request = new PutThings2Request();
 		request.getThing().add(thing);
@@ -48,7 +46,7 @@ public class AdvanceDirectiveV2Test {
 		ThingRequestGroup2 group = new ThingRequestGroup2();
 
 		ThingFilterSpec filter = new ThingFilterSpec();
-		filter.getTypeId().add(TypeManager.getTypeForClass(AdvanceDirectiveV2.class));
+		filter.getTypeId().add(TypeManager.getTypeForClass(SleepSessionV2.class));
 		group.getFilter().add(filter);
 
 		ThingFormatSpec2 format = new ThingFormatSpec2();
@@ -62,36 +60,39 @@ public class AdvanceDirectiveV2Test {
 
 		GetThings3Response thingsResponse = (GetThings3Response) requestTemplate.makeRequest(info);
 
-		AdvanceDirectiveV2 result = (AdvanceDirectiveV2) thingsResponse.getGroup().get(0).getThing().get(0).getData();
+		SleepSessionV2 result = (SleepSessionV2) thingsResponse.getGroup().get(0).getThing().get(0).getData();
 	}
 
-	private AdvanceDirectiveContactType createValidContactInfo() {
-		AdvanceDirectiveContactType contactInfo = new AdvanceDirectiveContactType();
-		contactInfo.setName(createValidName());
-		contactInfo.setId("12345");
-		contactInfo.setContactInfo(createValidContact());
+	private SleepSessionV2 createSleepSessionV2() {
+		SleepSessionV2 sleepSession = new SleepSessionV2();
+		sleepSession.setWhen(DateTime.fromCalendar(Calendar.getInstance()));
+		sleepSession.setBedTime(DateTime.fromCalendar(Calendar.getInstance()).getTime());
+		sleepSession.setWakeTime(DateTime.fromCalendar(Calendar.getInstance()).getTime());
+		sleepSession.setSleepMinutes(10);
+		sleepSession.setSettlingMinutes(10);
 
-		contactInfo.setRelationship(new CodableValue("Family"));
-		contactInfo.setIsPrimary(true);
-		return contactInfo;
-	}
+		Awakening awakening = new Awakening();
+		awakening.setMinutes(10);
+		awakening.setWhen(DateTime.fromCalendar(Calendar.getInstance()).getTime());
+		sleepSession.getAwakening().add(awakening);
 
-	private Name createValidName() {
-		Name name = new Name();
-		name.setFull("John Doe");
-		return name;
-	}
+		sleepSession.setMedications(new CodableValue("paracetamol"));
+		sleepSession.setWakeState(2);
+		sleepSession.setLightSleepDuration(2);
+		sleepSession.setDeepSleepDuration(2);
+		sleepSession.setRemSleepDuration(2);
+		sleepSession.setAwakeDuration(2);
+		sleepSession.setWakeupDuration(2);
 
-	private Contact createValidContact() {
-		return new Contact();
-	}
+		Level level = new Level();
+		level.setStartTime(DateTime.fromCalendar(Calendar.getInstance()).getTime());
+		level.setMinutes(5);
+		level.setState(new CodableValue("good"));
+		sleepSession.getLevel().add(level);
 
-	private AdvanceDirectiveV2 createValidAdvanceDirectiveV2() {
-		AdvanceDirectiveV2 directive = new AdvanceDirectiveV2();
-		directive.setWhen(DateTime.fromCalendar(Calendar.getInstance()));
-		directive.setName("Test Advance Directive");
-
-		directive.getContact().add(createValidContactInfo());
-		return directive;
+		sleepSession.setTimesWokenUp(2);
+		sleepSession.setAverageRestingHr(2);
+		sleepSession.setCaloriesBurned(2);
+		return sleepSession;
 	}
 }
