@@ -12,6 +12,7 @@ public class TypeManager {
 			{ "e4501363-fb95-4a11-bb60-da64e98048b5", "aerobicweekly.AerobicWeekly" },
 			{ "d65ad514-c492-4b59-bd05-f3f6cb43ceb3", "allergicepisode.AllergicEpisode" },
 			{ "52bf9104-2c5e-4f1f-a66d-552ebcc53df7", "allergy.Allergy" },
+			{ "0e17be0f-4423-4220-a110-e879074cbfe0", "advancedirectivev2.AdvanceDirectiveV2" },
 			{ "7AB3E662-CC5B-4BE2-BF38-78F8AAD5B161", "annotation.Annotation" },
 			{ "9ad2a94f-c6a4-4d78-8b50-75b65be0e250", "applicationdatareference.ApplicationDataReference" },
 			{ "a5033c9d-08cf-4204-9bd3-cb412ce39fc0", "application.AppSpecific" },
