@@ -100,6 +100,8 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlRootElement(name = "sleep-session-v2")
 public class SleepSessionV2 {
 
+    public static String typeId = "902e1a03-d7c7-409b-b566-ceddd8b17297";
+
     /**
      * <pre>
      * &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;summary xmlns="http://www.w3.org/2001/XMLSchema" xmlns:d="urn:com.microsoft.wc.dates" xmlns:ssv2="urn:com.microsoft.wc.thing.ssv2" xmlns:t="urn:com.microsoft.wc.thing.types"&gt;&#13;
