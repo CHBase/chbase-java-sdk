@@ -386,7 +386,8 @@ public class Thing2 {
 
 	// TODO: refine exception paradigm...defer til later??
 	public void setData(Object data) throws Exception {
-		JAXBContext jc = JaxbContextFactory.getContext(data.getClass().getPackage().getName());
+		JAXBContext jc = JaxbContextFactory.getContext(data.getClass());
+		// JAXBContext jc = JaxbContextFactory.getContext(data.getClass().getPackage().getName());
 		Marshaller m = jc.createMarshaller();
 		DOMResult result = new DOMResult();
 		m.marshal(data, result);
