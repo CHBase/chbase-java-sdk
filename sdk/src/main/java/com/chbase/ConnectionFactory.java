@@ -83,7 +83,8 @@ public class ConnectionFactory
 	 */
 	public static Connection getConnection()
 	{
-		return getConnection(appId);	}
+		return getConnection(appId);
+	}
 
 	/**
 	 * Gets a connection using the specified url for 
@@ -127,13 +128,11 @@ public class ConnectionFactory
 	{
 		int connectTimeout = ApplicationConfig.Transport_Timeout_Connection;
 		int readTimeout = ApplicationConfig.Transport_Timeout_Read;
-		
-		URL url = platform.toURL();
-			
-		URLConnectionTransport transport = new URLConnectionTransport();
+					
+		HttpClientTransport transport = new HttpClientTransport();
 		transport.setConnectionTimeout(connectTimeout);
 		transport.setReadTimeout(readTimeout);
-		transport.setUrl(url);
+		transport.setUrl(platform);
 		
 		return transport;
 	}
