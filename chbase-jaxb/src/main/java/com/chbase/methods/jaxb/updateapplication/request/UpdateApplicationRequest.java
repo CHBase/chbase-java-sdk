@@ -94,7 +94,7 @@ import com.chbase.thing.oxm.jaxb.types.CultureSpecificStringnz;
  * 
  * 
  */
-@JaxbRequest(methodName = "UpdateApplication", methodVersion = "1", responseNS = "urn:com.microsoft.wc.methods.response.UpdateApplication")
+@JaxbRequest(methodName = "UpdateApplication", methodVersion = "2", responseNS = "urn:com.microsoft.wc.methods.response.UpdateApplication")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = { "id", "name", "publicKeys", "personOnlineBaseAuth", "personOfflineBaseAuth",
 		"methods", "actionUrl", "description", "authReason", "domainName", "largeLogo", "smallLogo", "persistentTokens",
